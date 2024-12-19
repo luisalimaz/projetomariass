@@ -1,0 +1,132 @@
+/* Reset de margens, padding e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f5f0; /* Fundo claro */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #4a5d23, #6e8c35); /* Gradiente verde musgo */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid #3b4d1b; /* Verde musgo mais escuro */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+header .logo img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza o logo */
+}
+
+/* Título h1 */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Texto do header */
+header p {
+    font-size: 1.2rem;
+}
+
+/* Botão de login */
+header .btn-login {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+header .btn-login:hover {
+    background-color: white;
+    color: #4a5d23; /* Verde musgo principal */
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Título da seção */
+main h2 {
+    font-size: 2.5rem;
+    color: #4a5d23; /* Verde musgo */
+    margin-bottom: 20px;
+}
+
+/* Container de treinos */
+.treinos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Card de treino */
+.treino-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.treino-card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.treino-content h3 {
+    font-size: 1.6rem;
+    color: #3b4d1b; /* Verde musgo mais escuro */
+    margin-bottom: 10px;
+}
+
+.treino-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4a5d23; /* Verde musgo */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}

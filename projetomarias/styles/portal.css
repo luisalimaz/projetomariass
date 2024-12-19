@@ -1,0 +1,140 @@
+/* Cor base do fundo e fontes em verde musgo */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte moderna */
+    color: #2f4f2f; /* Verde musgo */
+    background: url('../img/WhatsApp Image 2024-12-18 at 21.13.08.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #4c8c4a; /* Verde musgo claro */
+    padding: 20px 40px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombras para um toque de profundidade */
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: rotate(360deg); /* Animação suave no logo ao passar o mouse */
+}
+
+header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Estilos para os links */
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #d9e2d7; /* Verde mais claro no hover */
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    background: rgba(255, 255, 255, 0.8); /* Fundo transparente para destacar o conteúdo */
+    margin: 20px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3.sub-titulo {
+    color: #4c8c4a; /* Verde musgo claro */
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo para os links de navegação */
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+div a {
+    background-color: #4c8c4a; /* Verde musgo */
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    display: inline-block;
+}
+
+div a:hover {
+    background-color: #3e7046; /* Verde musgo escuro */
+    transform: translateY(-5px); /* Efeito de elevação no hover */
+}
+
+div a:active {
+    transform: translateY(2px); /* Efeito de pressionamento do botão */
+}
+
+/* Estilo para links de navegação menores (caso precise) */
+div a.small {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+/* Estilos para a footer */
+footer {
+    background-color: #4c8c4a;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #d9e2d7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}

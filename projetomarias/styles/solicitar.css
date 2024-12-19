@@ -1,0 +1,135 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaf1e1; /* Light pastel green for a fresh look */
+    margin: 0;
+    padding: 0;
+    color: #444; /* Slightly lighter text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+/* Container Div */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px; /* Increased max-width for better balance */
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Pure white background for form */
+    border-radius: 12px; /* Rounded corners for a soft look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* More subtle shadow effect */
+}
+
+/* Form Title */
+h1 {
+    color: #2d4a32; /* Deep Musgo Green */
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Adds a more bold and refined feel */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+    color: #3e5a44; /* Darker, earthier green */
+    margin-bottom: 10px;
+    display: block;
+    font-size: 18px;
+}
+
+/* Input Styles */
+input[type="email"], input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 14px 16px; /* Larger padding for better usability */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* More rounded corners */
+    font-size: 18px;
+    color: #444;
+    background-color: #f9f9f9; /* Light gray background for input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+input[type="email"]:focus, input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #3c6e47; /* Musgo Green border on focus */
+    box-shadow: 0 0 8px rgba(60, 110, 71, 0.3); /* Soft glow effect */
+    outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: linear-gradient(135deg, #3c6e47, #2b4a2e); /* Subtle gradient effect */
+    color: #fff;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #2b4a2e, #3c6e47); /* Inverted gradient on hover */
+    transform: translateY(-2px); /* Subtle lifting effect */
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px); /* Slight pressing effect */
+}
+
+/* Message Section */
+p {
+    font-size: 18px;
+    color: #444;
+    margin-top: 25px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #3c6e47;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2b4a2e; /* Slightly darker green on hover */
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3c6e47; /* Musgo Green */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    border-radius: 12px 12px 0 0; /* Rounded corners for footer */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #c8e6c9; /* Light green hover effect for footer links */
+}

@@ -1,0 +1,106 @@
+/* agendamento.css */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte mais moderna */
+    background-color: #f0f5f1; /* Fundo mais suave, quase cinza claro */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #ffffff, #f0f5f1); /* Gradiente suave */
+    padding: 30px;
+    border-radius: 12px; /* Bordas arredondadas mais suaves */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+    transition: box-shadow 0.3s ease-in-out; /* Animação na sombra */
+}
+
+.container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Efeito de hover mais intenso */
+}
+
+h1, h2 {
+    color: #3e5c34; /* Verde musgo escuro para os títulos */
+    font-family: 'Lora', serif; /* Fonte serifada para títulos */
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.calendario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.mes h2 {
+    font-size: 26px;
+    margin: 10px 0;
+    color: #5a7f47; /* Verde musgo médio para o nome do mês */
+    font-weight: 700;
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70px; /* Aumentado para dar mais espaço */
+    background-color: #ffffff;
+    border-radius: 8px; /* Bordas arredondadas mais evidentes */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.dia:hover {
+    background-color: #d1e9d3; /* Tom claro de verde musgo no hover */
+    transform: scale(1.05); /* Efeito de crescimento no hover */
+}
+
+.dia.vazio {
+    background-color: #f4f4f4;
+    box-shadow: none; /* Sem sombra para os dias vazios */
+}
+
+.dia.agendado {
+    background-color: #a8d6a3; /* Verde musgo suave para os dias agendados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada nos agendados */
+}
+
+.numero {
+    font-size: 22px; /* Aumentado o tamanho da fonte */
+    font-weight: bold;
+    color: #4b6b3c; /* Cor de texto do número em verde mais escuro */
+}
+
+.bolinha {
+    position: absolute;
+    bottom: 8px; /* Ajuste na posição da bolinha */
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: #4b6b3c;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.dia.agendado:hover .bolinha {
+    transform: scale(1.3); /* Efeito de aumento na bolinha ao passar o mouse */
+}
+
+.semana {
+    font-weight: 700;
+    color: #6a7d59; /* Tom suave de verde musgo para os nomes dos dias da semana */
+    text-transform: uppercase;
+    font-size: 16px; /* Fonte um pouco menor para os dias da semana */
+}

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #3b5323, #2e4a1f); /* Gradiente suave */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+    backdrop-filter: blur(5px); /* Efeito de desfoque suave */
+}
+
+/* Container geral para centralizar todo o conteúdo */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Container do formulário de login */
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo com opacidade */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px); /* Desfoque para o fundo */
+}
+
+/* Título do formulário */
+#titulo {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para os campos de input */
+input[type="email"],
+input[type="password"] {
+    padding: 14px;
+    margin: 12px 0;
+    border: 2px solid #4b7c31; /* Borda verde musgo */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo com opacidade suave */
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #2e4a1f; /* Cor mais escura de verde quando em foco */
+    background-color: rgba(255, 255, 255, 0.4); /* Fundo um pouco mais claro ao focar */
+    box-shadow: 0 0 8px rgba(46, 74, 31, 0.7); /* Sombra suave no foco */
+}
+
+/* Estilo do botão de submit */
+input[type="submit"] {
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #2F4F2F; /* Verde musgo intenso para o botão */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave no botão */
+}
+
+input[type="submit"]:hover {
+    background-color: #2e4a1f; /* Verde mais escuro no hover */
+    transform: translateY(-3px); /* Efeito de elevação no hover */
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px); /* Efeito de pressionar no botão */
+}
+
+/* Link para a página de registro */
+p a {
+    color: #d1e8d0; /* Verde claro para o link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+p {
+    margin: 10px;
+    color: white;
+}
+
+p a:hover {
+    color: #a1c99d; /* Efeito de cor mais clara no hover */
+    text-decoration: underline;
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: white;
+    background-color: #f44336; /* Vermelho para erro */
+    padding: 12px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para a mensagem */
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}

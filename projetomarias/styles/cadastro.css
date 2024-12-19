@@ -1,0 +1,140 @@
+/* Reset básico de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #2c3e50, #4f5d27); /* Degradê entre preto e musgo verde */
+    padding: 20px;
+    color: #fff;
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    color: #6A7F44; /* Musgo verde para o título */
+    margin-bottom: 20px;
+    font-size: 2rem; /* Tamanho ajustado para título */
+    font-weight: 600;
+}
+
+/* Estilo do link "Voltar" - alinhado à direita */
+a {
+    color: #6A7F44; /* Musgo verde */
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    text-align: right; /* Alinha o link à direita */
+    transition: color 0.3s ease;
+}
+
+/* Estilo para o efeito de hover no link de voltar */
+a:hover {
+    color: #2e7d32; /* Verde mais escuro no hover */
+    text-decoration: underline;
+}
+
+/* Estilo do formulário */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo transparente com um leve tom branco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); /* Desfoque sutil do fundo */
+}
+
+/* Estilo dos labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #4f5d27; /* Musgo verde para os labels */
+    font-size: 1rem;
+}
+
+/* Estilo dos inputs e selects */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #4f5d27; /* Musgo verde nas bordas */
+    border-radius: 6px; /* Bordas mais arredondadas */
+    font-size: 16px;
+    background-color: rgba(79, 93, 39, 0.1); /* Musgo verde claro como fundo suave */
+    transition: border-color 0.3s, box-shadow 0.3s ease-in-out; /* Transições suaves */
+}
+
+/* Estilo para o foco nos campos */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #2e7d32; /* Verde musgo mais vibrante no foco */
+    outline: none;
+    box-shadow: 0 0 10px rgba(46, 125, 50, 0.6); /* Sombra suave no foco */
+}
+
+/* Estilo do botão de submit */
+input[type="submit"] {
+    background-color: #388e3c; /* Verde musgo para o botão */
+    color: white;
+    font-size: 16px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px; /* Dá um espaçamento extra acima do botão */
+}
+
+/* Efeito de hover no botão */
+input[type="submit"]:hover {
+    background-color: #2e7d32; /* Verde mais escuro no hover */
+    transform: scale(1.05); /* Efeito de aumento do botão */
+    box-shadow: 0 6px 15px rgba(56, 142, 60, 0.4); /* Adiciona sombra suave ao passar o mouse */
+}
+
+/* Efeito de clique no botão */
+input[type="submit"]:active {
+    background-color: #256b28; /* Verde mais escuro no clique */
+    transform: scale(1); /* Remove o efeito de aumento durante o clique */
+    box-shadow: 0 2px 10px rgba(56, 142, 60, 0.7); /* Foca na sombra ao clicar */
+}
+
+/* Adiciona um efeito de foco suave quando o botão é focado */
+input[type="submit"]:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 8px rgba(56, 142, 60, 0.7); /* Sombra suave ao focar */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 750px) {
+    form {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+/* Estilo para o botão de voltar */
+a:hover {
+    text-decoration: underline;
+}

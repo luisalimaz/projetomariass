@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #2c3e50, #4f5d27); /* Gradiente suave entre preto e verde musgo */
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #6A7F44; /* Musgo verde para o título */
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Tamanho maior para o título */
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Estilizando o formulário */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo transparente com opacidade */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    backdrop-filter: blur(8px); /* Desfoque suave no fundo */
+}
+
+/* Estilo para os labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #4f5d27; /* Musgo verde para os labels */
+    font-size: 1.1rem;
+}
+
+/* Estilo para os campos de input */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 2px solid #4f5d27; /* Borda musgo verde */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px;
+    background-color: rgba(79, 93, 39, 0.1); /* Fundo musgo verde claro */
+    color: #333; /* Cor do texto escura */
+    transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="file"]:focus {
+    border-color: #3e4a1c; /* Cor mais escura de verde */
+    background-color: rgba(79, 93, 39, 0.2); /* Fundo mais claro ao focar */
+    box-shadow: 0 0 12px rgba(46, 74, 31, 0.7); /* Sombra suave no foco */
+}
+
+/* Estilo para os botões */
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #4f5d27; /* Botão verde musgo */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+input[type="submit"]:hover {
+    background-color: #3e4a1c; /* Verde mais escuro no hover */
+    transform: translateY(-4px); /* Efeito de elevação */
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px); /* Efeito de pressionar o botão */
+}
+
+/* Estilos para mensagens de erro ou sucesso */
+.error-message,
+.success-message {
+    color: white;
+    padding: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.error-message {
+    background-color: #f44336; /* Vermelho para erros */
+}
+
+.success-message {
+    background-color: #4caf50; /* Verde para sucesso */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Alinhamento do link "Voltar" à direita */
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+/* Estilo do link "Voltar" */
+a {
+    color: #6A7F44; /* Musgo verde */
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+a:hover {
+    color: #3e4a1c; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Estilo do parágrafo */
+p {
+    margin: 0;
+    color: rgb(21, 100, 55); /* Verde escuro */
+    font-size: 1rem;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do link dentro do parágrafo */
+p a {
+    color: #087105; /* Verde claro para o link */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Deixa o link em negrito */
+    transition: color 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Efeito de hover para o link */
+p a:hover {
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+    color: #055a02; /* Cor mais escura ao passar o mouse */
+}
+
